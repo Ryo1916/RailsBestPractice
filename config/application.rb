@@ -27,5 +27,8 @@ module RailsBestPractice
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Use encrypted secrets at each environments
+    config.read_encrypted_secrets = true
   end
 end
