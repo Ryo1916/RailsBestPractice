@@ -5,20 +5,27 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+# base
 gem 'rails', '5.1.3'
+gem 'therubyracer', platforms: :ruby, github: 'cowboyd/therubyracer'
+
+# db
 gem 'mysql2', '0.4.10'
+
+# server
 gem 'puma', '~> 3.7'
+
+# view
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier',   '>= 1.3.0'
+gem 'turbolinks', '5.0.1'
+
+# json
 gem 'jbuilder', '~> 2.5'
 
-# gem 'therubyracer', platforms: :ruby
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -35,6 +42,7 @@ group :development do
   gem 'binding_of_caller',     '0.8.0'
   gem 'pry-byebug',            '3.6.0'
   gem 'pry-rails',             '0.3.9'
+  gem 'rubocop',               '0.62.0'
 end
 
 group :test do
