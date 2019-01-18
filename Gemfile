@@ -29,6 +29,9 @@ gem 'uglifier',     '>= 1.3.0'
 # json
 gem 'jbuilder', '~> 2.5'
 
+# account
+gem 'devise', '4.5'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use Capistrano for deployment
