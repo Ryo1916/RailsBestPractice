@@ -30,7 +30,8 @@ gem 'uglifier',     '>= 1.3.0'
 gem 'jbuilder', '~> 2.5'
 
 # account
-gem 'devise', '4.5'
+gem 'devise',            '4.5'
+gem 'letter_opener_web', '1.3.4'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

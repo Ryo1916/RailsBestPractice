@@ -18,10 +18,10 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me@example.com'
+  config.mailer_sender = Rails.application.secrets.SMTP_EMAIL
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = 'Devise::Mailer'
+  config.mailer = 'Devise::Mailer'
 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
@@ -75,7 +75,7 @@ Devise.setup do |config|
   # config.http_authenticatable = [:database]` will enable it only for
   # database authentication. The supported strategies are:
   # :database = Support basic authentication with authentication key
-  # + passwor config.http_authenticatable = false
+  # + password config.http_authenticatable = false
 
   # If 401 status code should be returned for AJAX requests. True by default.
   # config.http_authenticatable_on_xhr = true
