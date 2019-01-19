@@ -11,6 +11,8 @@ end
 gem 'mini_racer',  '0.2.4'
 gem 'rails',       '5.1.3'
 gem 'redis-rails', '5.0.2'
+gem 'sidekiq',     '5.2.3'
+gem 'sinatra',     '2.0.5'
 
 # db
 gem 'mysql2', '0.4.10'

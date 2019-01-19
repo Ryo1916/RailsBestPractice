@@ -37,5 +37,8 @@ module RailsBestPractice
 
     # Use encrypted secrets at each environments
     config.read_encrypted_secrets = true
+
+    # Use sidekiq for ActiveJob
+    config.active_job.queue_adapter = :sidekiq
   end
 end
