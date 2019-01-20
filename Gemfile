@@ -27,6 +27,7 @@ gem 'brakeman', '4.3.1'
 # view
 gem 'bootstrap',    '4.1.3'
 gem 'jquery-rails', '4.3.3'
+gem 'kaminari',     '1.1.1'
 gem 'popper_js',    '1.14.5'
 gem 'sass-rails',   '~> 5.0'
 gem 'tether-rails', '1.4.0'
