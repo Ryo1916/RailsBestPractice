@@ -34,6 +34,9 @@
 class User < ApplicationRecord
   attr_accessor :login
 
+  # Association
+  has_many :posts, inverse_of: :user
+
   # Validations
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates_format_of :name, with: /^[a-zA-Z0-9_\.]*$/, multiline: true
