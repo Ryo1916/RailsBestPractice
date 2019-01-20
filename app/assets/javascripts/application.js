@@ -1,7 +1,7 @@
-= require rails-ujs
-//= require turbolinks
-//= require tether
-//= require jquery3
+//= require jquery
 //= require popper
+//= require tether
+//= require jquery_ujs
 //= require bootstrap
+//= require turbolinks
 //= require_tree .

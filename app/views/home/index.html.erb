@@ -1,1 +1,14 @@
-<h1>Hello, <%= @user.name %>!!! </h1>
+<div class="col-md-3">
+  <div class="card p-2">
+    <%= image_tag current_user.avatar.url,
+                  class: "card-img-top rouded-circle" %>
+  </div>
+  <div class="card-body">
+    <h4 class="card-title"> <%= "@#{@user.name}" %> </h4>
+    <p class="card-text">
+      <span class="text-secondary">
+        user's info here.
+      </span>
+    </p>
+  </div>
+</div>

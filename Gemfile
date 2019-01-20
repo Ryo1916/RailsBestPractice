@@ -40,6 +40,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise',            '4.5'
 gem 'letter_opener_web', '1.3.4'
 
+# images
+gem 'paperclip', '6.1.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
