@@ -21,8 +21,8 @@ gem 'mysql2', '0.4.10'
 gem 'puma', '~> 3.7'
 
 # security
-gem 'brakeman',       '4.3.1'
-gem 'secure_headers', '6.0.0'
+gem 'brakeman', '4.3.1'
+# gem 'secure_headers', '6.0.0'
 
 # view
 gem 'bootstrap',    '4.1.3'
@@ -48,6 +48,7 @@ gem 'paperclip', '6.1.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'faker', '1.7.3'
 end
 
 group :development do
