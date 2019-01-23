@@ -15,7 +15,8 @@ gem 'sidekiq',     '5.2.3'
 gem 'sinatra',     '2.0.5'
 
 # db
-gem 'mysql2', '0.4.10'
+gem 'counter_culture', '2.1.4'
+gem 'mysql2',          '0.4.10'
 
 # server
 gem 'puma', '~> 3.7'
