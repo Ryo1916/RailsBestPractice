@@ -3,15 +3,22 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  ActiveAdmin.routes(self)
-  get 'posts/create'
-
   root 'home#index'
 
-  devise_for :users
+  # for active admin
+  ActiveAdmin.routes(self)
 
+  # route for posting
   resources :posts, only: [:create]
 
+  # routes for users
+  devise_for :users
+
+  # routes for sidekiq
+  authenticate :user, ->(u) { u.admin? } do
+    mount Sidekiq::Web, at: '/sidekiq'
+  end
+
+  # routes for letter_opener to get sent emails at development environment
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
-  mount Sidekiq::Web, at: '/sidekiq'
 end
