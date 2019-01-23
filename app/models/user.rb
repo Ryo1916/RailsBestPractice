@@ -30,6 +30,7 @@
 #  avatar_file_size       :bigint(8)
 #  avatar_updated_at      :datetime
 #  posts_count            :integer          default(0), not null
+#  role                   :integer          default(0), not null
 #
 
 class User < ApplicationRecord
@@ -54,6 +55,9 @@ class User < ApplicationRecord
                     default_url: '/missing.png'
   validates_attachment_content_type :avatar,
                                     content_type: %r{\Aimage\/.*\z}
+
+  # active admin
+  enum role: { user: 0, admin: 1 }
 
   def self.find_for_database_authentication(warden_conditions)
     conditions = warden_conditions.dup
