@@ -15,6 +15,7 @@ gem 'sidekiq',     '5.2.3'
 gem 'sinatra',     '2.0.5'
 
 # db
+gem 'aws-sdk',         '3.0.1'
 gem 'counter_culture', '2.1.4'
 gem 'mysql2',          '0.4.10'
 
@@ -47,9 +48,6 @@ gem 'activeadmin', '1.4.3'
 
 # images
 gem 'paperclip', '6.1.0'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
