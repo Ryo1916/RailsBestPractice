@@ -49,6 +49,10 @@ gem 'activeadmin', '1.4.3'
 # images
 gem 'paperclip', '6.1.0'
 
+# https://github.com/net-ssh/net-ssh/issues/565
+gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+gem 'ed25519',      '>= 1.2', '< 2.0'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'faker', '1.7.3'
