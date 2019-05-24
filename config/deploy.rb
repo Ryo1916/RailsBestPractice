@@ -5,7 +5,7 @@ set :repo_url, 'https://github.com/Ryo1916/RailsBestPractice.git'
 
 # base
 set :application, 'RailsBestPractice'
-set :branch, 'master'
+set :branch, 'deploy'
 set :user, 'admin'
 set :deploy_to, "/opt/#{fetch(:application)}"
 set :rbenv_ruby, File.read('.ruby-version').strip
