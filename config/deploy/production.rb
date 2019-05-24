@@ -55,3 +55,6 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+server '13.230.190.180', user: 'admin', roles: %w[app db web]
+set :ssh_options, keys: '~/.ssh/RailsSampleApp-admin'
