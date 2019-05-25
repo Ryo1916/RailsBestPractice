@@ -12,7 +12,7 @@ set :rbenv_ruby, File.read('.ruby-version').strip
 set :pty,             false
 set :use_sudo,        false
 set :stage,           :production
-set :deploy_via,      :remote_cache
+# set :deploy_via,      :remote_cache
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets',
                                                'vendor/bundle', 'public/system', 'public/uploads')
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml', 'config/secrets.yml.key')
