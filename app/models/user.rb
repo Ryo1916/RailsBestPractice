@@ -45,9 +45,8 @@ class User < ApplicationRecord
   validate :validate_name
 
   # devise features
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable,
-         :confirmable, :lockable, :timeoutable
+  devise :database_authenticatable, :registerable, :recoverable,
+         :rememberable, :trackable, :validatable, :lockable, :timeoutable
 
   # paperclip
   has_attached_file :avatar,
